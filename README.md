@@ -62,3 +62,35 @@ const user : User = new UserCredential("Alish",1);
     function =>	typeof f === "function"
     array =>	Array.isArray(a)
 ```
+- For example, you can make a function return different values depending on whether it is passed a string or an array:
+
+```js
+  function wrapInArray(obj: string | string[]) {
+    if (typeof obj === "string") {
+      return [obj];
+    }
+    return obj;
+   }
+```
+#### Generics:~
+- Generics provide variables to types. 
+- A common example is an array. 
+- An array without generics could contain anything. 
+- An array with generics can describe the values that the array contains.
+
+```js
+  type StringArray = Array<string>;
+  type NumberArray = Array<number>;
+  type ObjectWithNameArray = Array<{ name: string }>;
+  
+  
+  const arr : StringArray = ["A","B","C"];
+  console.log(arr);
+
+  const arr2 : NumberArray = [1,2,3,4];
+  console.log(arr2);
+
+  const arr3 : ObjectWithNameArray = [{name:"Anamika"}]
+  console.log(arr3);
+```
+
