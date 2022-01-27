@@ -39,3 +39,12 @@ const user : User = new UserCredential("Alish",1);
 
   console.log(getLength(["A","B"]));
 ```
+- To learn the type of a variable, use typeof:
+```js
+    string =>	typeof s === "string"
+    number =>	typeof n === "number"
+    boolean =>	typeof b === "boolean"
+    undefined =>	typeof undefined === "undefined"
+    function =>	typeof f === "function"
+    array =>	Array.isArray(a)
+```
